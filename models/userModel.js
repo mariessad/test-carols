@@ -41,7 +41,7 @@ passport.use(
     {
       clientID: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      callbackURL: "https://test-carols.herokuapp.com/auth/google/admin", //changed to heroku app name
+      callbackURL: "https://test-carols.herokuapp.com/auth/google/admin",
     },
     function (accessToken, refreshToken, email, cb) {
       console.log(email);
